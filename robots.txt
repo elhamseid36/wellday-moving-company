@@ -1,0 +1,9 @@
+# robots.txt for WELLDAY Moving Company
+# This file tells search engine spiders which pages they can or cannot crawl.
+
+# Allow all robots to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specify the location of the XML sitemap
+Sitemap: https://www.yourdomain.com/sitemap.xml

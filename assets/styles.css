@@ -1,0 +1,101 @@
+/* assets/styles.css */
+
+/* ---------------------------------------------
+   1. Subtle Background Animation (The "Sliding Background" effect)
+   --------------------------------------------- */
+
+/* Define the keyframes for the subtle right-to-left background movement */
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 0%; /* Start position */
+    }
+    100% {
+        background-position: 100% 100%; /* End position */
+    }
+}
+
+/* Apply the animation to a dedicated class for the hero section */
+.dynamic-background {
+    /* Set a subtle, professional background image (use a placeholder initially) */
+    background-image: url('./images/background-texture.jpg'); 
+    background-size: 200% 200%; /* Make the background large so it can slide */
+    animation: slideBackground 60s linear infinite alternate; /* Slow, professional movement */
+}
+
+/* ---------------------------------------------
+   2. Custom Scrollbar (Professional Polish)
+   --------------------------------------------- */
+/* Optional: For a more customized, professional look */
+
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ccc; /* Light theme thumb */
+    border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #4b5563; /* Dark theme thumb */
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* =======================================================
+   assets/styles.css: WELLDAY Moving Co. Custom Styles
+   ======================================================= */
+
+/* 1. Global Utilities */
+/* Ensures smooth scrolling behavior when clicking anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Custom Font Definition (Optional: Use if you decide to self-host a font) */
+/*
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+*/
+
+/* 3. Dynamic Background for Hero Sections (Example of a specific style not easily done in Tailwind) */
+/* Applies a subtle texture or gradient overlay to hero sections for depth */
+.dynamic-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.dynamic-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Subtle geometric pattern effect (can be replaced with an image URL) */
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* 4. Scroll Animation Base Classes */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px); /* Starts slightly below its final position */
+    transition: all 0.8s ease-out;
+}
+
+/* Class applied when the element is visible */
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

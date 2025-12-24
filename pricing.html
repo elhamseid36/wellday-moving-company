@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Pricing | WELLDAY Professional Moving Solutions</title>
+    <meta name="description" content="View WELLDAY's transparent pricing for luxury residential, corporate, and specialty moving services. No hidden fees.">
+    <meta name="keywords" content="moving pricing, luxury moving costs, corporate relocation price, transparent movers">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind Configuration (Matching index.html setup)
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e3a8a',
+                        'accent-gold': '#d97706',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+
+    <header class="sticky top-0 z-50 shadow-lg bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+               <a href="index.html" class="flex-shrink-0 flex items-center space-x-2 text-2xl font-extrabold text-primary-blue dark:text-white transition-colors duration-300 tracking-wider">
+    
+    <svg class="w-8 h-8 text-accent-gold dark:text-accent-gold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 50 L30 10 L50 50 L30 90 L10 50 Z M50 50 L70 10 L90 50 L70 90 L50 50 Z" 
+              stroke="currentColor" 
+              stroke-width="8" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"/>
+    </svg>
+    <span>
+        WELLDAY<span class="text-accent-gold dark:text-accent-gold">.</span>
+    </span>
+</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Home</a>
+                    <a href="services.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Services</a>
+                    <a href="pricing.html" class="text-gray-900 dark:text-gray-100 text-lg font-bold transition duration-150 ease-in-out border-b-2 border-accent-gold pb-1">Pricing</a>
+                    <a href="about.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">About</a>
+                    <a href="blog.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Blog</a>
+                    <a href="contact.html" class="px-4 py-2 text-white bg-accent-gold rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 text-lg font-medium">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 focus:outline-none">
+                        <svg id="sun-icon" class="h-6 w-6 text-yellow-500 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                        <svg id="moon-icon" class="h-6 w-6 text-gray-400 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                    </button>
+                    <button id="menu-button" class="md:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white dark:bg-gray-800 shadow-lg pb-4 transition-all duration-300">
+            <a href="index.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a>
+            <a href="services.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Services</a>
+            <a href="pricing.html" class="block px-4 py-2 text-base font-bold text-primary-blue dark:text-accent-gold hover:bg-gray-50 dark:hover:bg-gray-700">Pricing</a>
+            <a href="about.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">About</a>
+            <a href="blog.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Blog</a>
+            <a href="contact.html" class="block px-4 py-2 text-base font-medium text-white bg-accent-gold hover:bg-opacity-90 mt-2 mx-4 rounded-md text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+         <section class="relative py-24 sm:py-32 overflow-hidden bg-gray-100 dark:bg-gray-950 transition-colors duration-500"
+           style="background-image: url('https://www.articlerich.com/wp-content/uploads/2024/02/Afton-Town-Alight-Unveiling-the-Best-Moving-Companies.jpg'); background-size: cover; background-position: center;"
+         >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-primary-blue dark:text-white mb-4">
+            Transparent Service Tiers
+        </h1>
+        <p class="text-xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto">
+            Choose the perfect level of service complexity and care. All tiers include a dedicated logistics coordinator and comprehensive insurance coverage.
+        </p>
+    </div>
+</section>
+
+<section class="py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors duration-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+
+            <div class="flex flex-col bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 border border-gray-200 dark:border-gray-700">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Gold Tier</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">The essential professional move—efficient and secure transport.</p>
+                    <p class="mt-6">
+                        <span class="text-4xl font-extrabold text-primary-blue dark:text-accent-gold">$135</span>
+                        <span class="text-base font-medium text-gray-500 dark:text-gray-400"> base hourly rate *</span>
+                    </p>
+                </div>
+                <div class="flex-1 px-6 pt-6 pb-8 bg-white dark:bg-gray-900">
+                    <h4 class="sr-only">Features</h4>
+                    <ul role="list" class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">Standard Freight & Logistics</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">Basic Furniture Disassembly/Reassembly</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">Itemized Inventory Tracking</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-11.293a1 1 0 00-1.414-1.414L10 8.586 7.707 6.293a1 1 0 00-1.414 1.414L8.586 10l-2.293 2.293a1 1 0 101.414 1.414L10 11.414l2.293 2.293a1 1 0 001.414-1.414L11.414 10l2.293-2.293a1 1 0 000-1.414z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-400 dark:text-gray-600">Specialty Crating (Add-on)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-gray-100 dark:bg-gray-800">
+                    <a href="contact.html?tier=gold" class="block w-full py-3 px-6 text-lg font-semibold text-primary-blue bg-white rounded-lg shadow-md hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition">
+                        Get Started with Gold
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white dark:bg-gray-700 rounded-2xl shadow-2xl ring-4 ring-accent-gold transform scale-105 transition duration-300">
+                <div class="p-8">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Platinum Tier</h3>
+                        <span class="inline-flex items-center px-3 py-1 text-sm font-semibold leading-5 text-accent-gold bg-accent-gold/20 rounded-full">
+                            Most Popular
+                        </span>
+                    </div>
+                    <p class="mt-4 text-gray-600 dark:text-gray-300">Our signature White-Glove service: full management and guaranteed discretion.</p>
+                    <p class="mt-6">
+                        <span class="text-5xl font-extrabold text-accent-gold">$185</span>
+                        <span class="text-base font-medium text-gray-500 dark:text-gray-400"> base hourly rate *</span>
+                    </p>
+                </div>
+                <div class="flex-1 px-6 pt-6 pb-8 bg-gray-50 dark:bg-gray-800">
+                    <h4 class="sr-only">Features</h4>
+                    <ul role="list" class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-accent-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300 font-semibold">Full Packing & Unpacking Service</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-accent-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300 font-semibold">Climate-Controlled Vehicle Priority</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-accent-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300 font-semibold">Complimentary Specialty Crating</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-accent-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300 font-semibold">Dedicated Move Manager (24/7 access)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-gray-100 dark:bg-gray-700">
+                    <a href="contact.html?tier=platinum" class="block w-full py-4 px-6 text-lg font-extrabold text-white bg-accent-gold rounded-lg shadow-xl hover:bg-opacity-90 transition transform hover:scale-[1.01]">
+                        Book Platinum Today
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 border border-gray-200 dark:border-gray-700">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Diamond Tier</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Tailored logistics for complex corporate or international moves.</p>
+                    <p class="mt-6">
+                        <span class="text-5xl font-extrabold text-accent-gold">$250</span>
+                        <span class="text-base font-medium text-gray-500 dark:text-gray-400"> base hourly rate *</span>
+                        <span class="text-4xl font-extrabold text-primary-blue dark:text-accent-gold">Custom Quote</span>
+                        <span class="text-base font-medium text-gray-500 dark:text-gray-400"> (Project-based)</span>
+                    </p>
+                </div>
+                <div class="flex-1 px-6 pt-6 pb-8 bg-white dark:bg-gray-900">
+                    <h4 class="sr-only">Features</h4>
+                    <ul role="list" class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">Zero-Downtime Corporate Relocation</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">International Customs and Freight Management</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">Secure Vault Storage Access</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="flex-shrink-0 h-6 w-6 text-green-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
+                            <p class="ml-3 text-base text-gray-700 dark:text-gray-300">Premium Insurance Guarantee</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-gray-100 dark:bg-gray-800">
+                    <a href="contact.html?tier=diamond" class="block w-full py-3 px-6 text-lg font-semibold text-primary-blue bg-white rounded-lg shadow-md hover:bg-gray-200 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 transition">
+                        Request Custom Quote
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="mt-16 text-center text-sm text-gray-600 dark:text-gray-400">
+            <p>* Base hourly rates are estimates. Final quote is determined by inventory, distance, date flexibility, and special handling requirements.</p>
+            <p class="mt-2">Contact us to receive a firm, comprehensive estimate tailored to your exact needs.</p>
+        </div>
+
+    </div>
+</section>
+        </main>
+
+    <footer class="bg-gray-800 dark:bg-gray-950 transition-colors duration-500 pt-16 pb-8 border-t border-gray-700 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-3xl font-extrabold text-white tracking-wider">WELLDAY<span class="text-accent-gold">.</span></a>
+                    <p class="mt-4 text-gray-400 text-sm">Seamless Transitions. Exceptional Service.</p>
+                    <div class="mt-6 space-y-2 text-sm text-gray-400">
+                        <p>Email: <a href="mailto:info@welldaymovers.com" class="hover:text-accent-gold transition">info@welldaymovers.com</a></p>
+                        <p>Phone: <a href="tel:+18005550199" class="hover:text-accent-gold transition">1-800-555-0199</a></p>
+                        <p>Address: 123 Professional Blvd, Suite 400, Moving City, 90210</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-accent-gold transition">About WELLDAY</a></li>
+                        <li><a href="blog.html" class="hover:text-accent-gold transition">Our Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-accent-gold transition">Careers</a></li>
+                        <li><a href="sitemap.xml" class="hover:text-accent-gold transition" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html#residential" class="hover:text-accent-gold transition">Residential Luxury</a></li>
+                        <li><a href="services.html#corporate" class="hover:text-accent-gold transition">Corporate Relocation</a></li>
+                        <li><a href="services.html#storage" class="hover:text-accent-gold transition">Secure Storage</a></li>
+                        <li><a href="pricing.html" class="hover:text-accent-gold transition">Transparent Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Stay Informed</h3>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for exclusive moving tips and updates.</p>
+                    <form action="#" method="POST" name="subscription" data-netlify="true" class="flex flex-col space-y-3">
+    
+    <input type="hidden" name="form-name" value="subscription" /> 
+    
+    <input 
+        type="email" 
+        name="email" placeholder="Your professional email" 
+        class="p-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-accent-gold focus:border-accent-gold"
+        required 
+    >
+    <button type="submit" class="p-3 bg-accent-gold text-white font-semibold rounded-lg hover:bg-opacity-90 transition">
+        Subscribe
+    </button>
+</form>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-gray-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 order-2 md:order-1">
+                    &copy; 2025 WELLDAY Moving Co. All rights reserved. | <a href="#" class="hover:text-accent-gold transition">Privacy Policy</a>
+                </p>
+                <div class="flex space-x-4 mb-4 md:mb-0 order-1 md:order-2 text-gray-400">
+                    <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                    <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                    <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/scripts.js"></script>
+</body>
+</html>

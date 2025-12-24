@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WELLDAY | Our Mission and Heritage in Luxury Moving</title>
+    <meta name="description" content="Learn about WELLDAY Moving Co.'s commitment to seamless transitions, our heritage, and meet the leadership team dedicated to your stress-free move.">
+    <meta name="keywords" content="about us movers, luxury moving company history, professional moving team, WELLDAY mission">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Tailwind Configuration (Matching index.html setup)
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e3a8a',
+                        'accent-gold': '#d97706',
+                    }
+                }
+            }
+        }
+     </script>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+
+    <header class="sticky top-0 z-50 shadow-lg bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+               <a href="index.html" class="flex-shrink-0 flex items-center space-x-2 text-2xl font-extrabold text-primary-blue dark:text-white transition-colors duration-300 tracking-wider">
+    
+    <svg class="w-8 h-8 text-accent-gold dark:text-accent-gold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 50 L30 10 L50 50 L30 90 L10 50 Z M50 50 L70 10 L90 50 L70 90 L50 50 Z" 
+              stroke="currentColor" 
+              stroke-width="8" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"/>
+    </svg>
+    <span>
+        WELLDAY<span class="text-accent-gold dark:text-accent-gold">.</span>
+    </span>
+</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Home</a>
+                    <a href="services.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Services</a>
+                    <a href="pricing.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Pricing</a>
+                    <a href="about.html" class="text-gray-900 dark:text-gray-100 text-lg font-bold transition duration-150 ease-in-out border-b-2 border-accent-gold pb-1">About</a>
+                    <a href="blog.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Blog</a>
+                    <a href="contact.html" class="px-4 py-2 text-white bg-accent-gold rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 text-lg font-medium">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 focus:outline-none">
+                        <svg id="sun-icon" class="h-6 w-6 text-yellow-500 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                        <svg id="moon-icon" class="h-6 w-6 text-gray-400 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                    </button>
+                    <button id="menu-button" class="md:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white dark:bg-gray-800 shadow-lg pb-4 transition-all duration-300">
+            <a href="index.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a>
+            <a href="services.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Services</a>
+            <a href="pricing.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Pricing</a>
+            <a href="about.html" class="block px-4 py-2 text-base font-bold text-primary-blue dark:text-accent-gold hover:bg-gray-50 dark:hover:bg-gray-700">About</a>
+            <a href="blog.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Blog</a>
+            <a href="contact.html" class="block px-4 py-2 text-base font-medium text-white bg-accent-gold hover:bg-opacity-90 mt-2 mx-4 rounded-md text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="relative py-24 sm:py-32 overflow-hidden bg-primary-blue dark:bg-gray-800 transition-colors duration-500 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-white mb-4">
+            The WELLDAY Difference
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto">
+            Where logistics expertise meets personalized care. We handle the complexity so you can focus on the destination.
+        </p>
+    </div>
+</section>
+
+<section class="py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors duration-500 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        
+        <div>
+            <span class="text-sm font-semibold text-accent-gold uppercase tracking-wider">Our Core Values</span>
+            <h2 class="mt-2 text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
+                A Heritage of Seamless Transitions
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+                Founded in 2016 on the principle of absolute client privacy and white-glove service, WELLDAY was created to fill a gap in the market for clients requiring superior logistics management for high-value and sensitive relocations.
+            </p>
+            <blockquote class="mt-8 border-l-4 border-accent-gold pl-6 italic text-xl text-gray-800 dark:text-gray-200">
+                “Our mission is not merely to move possessions, but to move lives with respect, precision, and zero stress.”
+            </blockquote>
+            <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
+                We achieve this through rigorous staff training, the use of proprietary packing materials, and a commitment to communication that keeps you informed at every step, without burdening your time.
+            </p>
+        </div>
+
+        <div class="hidden md:block">
+             <div class="aspect-w-16 aspect-h-9 w-full rounded-xl shadow-2xl overflow-hidden">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 sm:py-32 bg-gray-100 dark:bg-gray-950 transition-colors duration-500 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">
+            Meet the Executive Team
+        </h2>
+        <p class="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Our leadership team brings decades of experience in luxury logistics, project management, and customer service excellence.
+        </p>
+
+        <div class="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transform hover:scale-[1.05] transition duration-300">
+                <div class="mx-auto h-32 w-32 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+                    <img 
+        src="https://wallpapers.com/images/hd/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig.jpg" 
+        alt="Portrait of Erimias Weldameckeal, Founder & CEO" 
+        class="object-cover w-full h-full"
+    >
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Erimias Weldameckeal</h3>
+                <p class="text-accent-gold font-semibold">Founder & CEO</p>
+                <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Visionary behind the White-Glove standard. Leads global strategy and client relations.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transform hover:scale-[1.05] transition duration-300">
+                <div class="mx-auto h-32 w-32 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+                     <img 
+        src="https://media.istockphoto.com/id/1135381120/photo/portrait-of-a-young-woman-outdoors-smiling.jpg?s=612x612&w=0&k=20&c=T5dukPD1r-o0BFqeqlIap7xzw07icucetwKaEC2Ms5M=" 
+        alt="Portrait of Sarah chen, Chief Operations Officer" 
+        class="object-cover w-full h-full"
+    >  
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Sarah Chen</h3>
+                <p class="text-accent-gold font-semibold">Chief Operations Officer</p>
+                <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Manages all ground logistics and oversees the team training and certification program.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transform hover:scale-[1.05] transition duration-300">
+                <div class="mx-auto h-32 w-32 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+                    <img 
+        src="assets/images/Saleh umar.jpg" 
+        alt="Portrait of Saleh Umar, Head of Corporate Logistics" 
+        class="object-cover w-full h-full"
+    >  
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Saleh Umar</h3>
+                <p class="text-accent-gold font-semibold">Head of Corporate Logistics</p>
+                <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Specializes in zero-downtime office and industrial relocation planning.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transform hover:scale-[1.05] transition duration-300">
+                <div class="mx-auto h-32 w-32 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+                     <img 
+        src="https://st.depositphotos.com/8214686/53566/i/450/depositphotos_535666422-stock-photo-studio-head-shot-of-a.jpg" 
+        alt="Portrait of Maya Singn, Client Experience Director" 
+        class="object-cover w-full h-full"
+    >  
+                </div>
+                <h3 class="mt-6 text-xl font-bold text-gray-900 dark:text-white">Maya Singh</h3>
+                <p class="text-accent-gold font-semibold">Client Experience Director</p>
+                <p class="mt-3 text-sm text-gray-600 dark:text-gray-400">Ensures every client's journey exceeds expectations from quote to unpack.</p>
+            </div>
+        </div>
+        
+        <div class="mt-16">
+            <a href="contact.html" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent-gold hover:bg-opacity-90 dark:bg-primary-blue dark:hover:bg-primary-blue/90 transition duration-300 shadow-lg">
+                Speak with our Team
+            </a>
+        </div>
+    </div>
+</section>
+        </main>
+
+    <footer class="bg-gray-800 dark:bg-gray-950 transition-colors duration-500 pt-16 pb-8 border-t border-gray-700 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="index.html" class="text-3xl font-extrabold text-white tracking-wider">WELLDAY<span class="text-accent-gold">.</span></a>
+                    <p class="mt-4 text-gray-400 text-sm">Seamless Transitions. Exceptional Service.</p>
+                    <div class="mt-6 space-y-2 text-sm text-gray-400">
+                        <p>Email: <a href="mailto:info@welldaymovers.com" class="hover:text-accent-gold transition">info@welldaymovers.com</a></p>
+                        <p>Phone: <a href="tel:+18005550199" class="hover:text-accent-gold transition">1-800-555-0199</a></p>
+                        <p>Address: 123 Professional Blvd, Suite 400, Moving City, 90210</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-accent-gold transition">About WELLDAY</a></li>
+                        <li><a href="blog.html" class="hover:text-accent-gold transition">Our Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-accent-gold transition">Careers</a></li>
+                        <li><a href="sitemap.xml" class="hover:text-accent-gold transition" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html#residential" class="hover:text-accent-gold transition">Residential Luxury</a></li>
+                        <li><a href="services.html#corporate" class="hover:text-accent-gold transition">Corporate Relocation</a></li>
+                        <li><a href="services.html#storage" class="hover:text-accent-gold transition">Secure Storage</a></li>
+                        <li><a href="pricing.html" class="hover:text-accent-gold transition">Transparent Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Stay Informed</h3>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for exclusive moving tips and updates.</p>
+                    <form action="#" method="POST" name="subscription" data-netlify="true" class="flex flex-col space-y-3">
+    
+    <input type="hidden" name="form-name" value="subscription" /> 
+    
+    <input 
+        type="email" 
+        name="email" placeholder="Your professional email" 
+        class="p-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-accent-gold focus:border-accent-gold"
+        required 
+    >
+    <button type="submit" class="p-3 bg-accent-gold text-white font-semibold rounded-lg hover:bg-opacity-90 transition">
+        Subscribe
+    </button>
+</form>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-gray-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 order-2 md:order-1">
+                    &copy; 2025 WELLDAY Moving Co. All rights reserved. | <a href="#" class="hover:text-accent-gold transition">Privacy Policy</a>
+                </p>
+                <div class="flex space-x-4 mb-4 md:mb-0 order-1 md:order-2 text-gray-400">
+                    <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                    <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                    <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/scripts.js" defer></script>
+</body>
+</html>

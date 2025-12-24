@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELLDAY | Seamless Professional Moving Solutions</title>
+    <meta name="description" content="WELLDAY: Your trusted partner for seamless, professional, and luxury moving services. Exceptional care for your national or international relocation.">
+    <meta name="keywords" content="professional moving company, luxury relocation, international movers, full-service moving, WELLDAY">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        // Configuration for extending Tailwind's default theme (optional but good practice)
+        tailwind.config = {
+            darkMode: 'class', // Enable dark mode based on 'dark' class on the <html> tag
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e3a8a', // A deep, professional blue
+                        'accent-gold': '#d97706', // A rich gold/orange for accents
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+      <header class="sticky top-0 z-50 shadow-lg bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex-shrink-0 flex items-center space-x-2 text-2xl font-extrabold text-primary-blue dark:text-white transition-colors duration-300 tracking-wider">
+    
+    <svg class="w-8 h-8 text-accent-gold dark:text-accent-gold" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 50 L30 10 L50 50 L30 90 L10 50 Z M50 50 L70 10 L90 50 L70 90 L50 50 Z" 
+              stroke="currentColor" 
+              stroke-width="8" 
+              stroke-linecap="round" 
+              stroke-linejoin="round"/>
+    </svg>
+    <span>
+        WELLDAY<span class="text-accent-gold dark:text-accent-gold">.</span>
+    </span>
+</a>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-900 dark:text-gray-100 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out border-b-2 border-transparent hover:border-accent-gold pb-1">Home</a>
+                <a href="services.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Services</a>
+                <a href="pricing.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Pricing</a>
+                <a href="about.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">About</a>
+                <a href="blog.html" class="text-gray-600 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold text-lg font-medium transition duration-150 ease-in-out">Blog</a>
+                <a href="contact.html" class="px-4 py-2 text-white bg-accent-gold rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 text-lg font-medium">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition duration-300 focus:outline-none">
+                    <svg id="sun-icon" class="h-6 w-6 text-yellow-500 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg id="moon-icon" class="h-6 w-6 text-gray-400 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <button id="menu-button" class="md:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-primary-blue dark:hover:text-accent-gold focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white dark:bg-gray-800 shadow-lg pb-4 transition-all duration-300">
+        <a href="index.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Home</a>
+        <a href="services.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Services</a>
+        <a href="pricing.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Pricing</a>
+        <a href="about.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">About</a>
+        <a href="blog.html" class="block px-4 py-2 text-base font-medium text-gray-700 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700">Blog</a>
+        <a href="contact.html" class="block px-4 py-2 text-base font-medium text-white bg-accent-gold hover:bg-opacity-90 mt-2 mx-4 rounded-md text-center">Contact</a>
+    </div>
+</header>
+
+<main>
+
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden fade-in-section"
+     style="background-image: url('https://mymovingjourney.com/posts/image/how-to-find-the-best-moving-companies-in-california.webp'); background-size: cover; background-position: center;"
+    >
+    >
+    <div class="absolute inset-0 dynamic-background opacity-5 dark:opacity-10"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-500">
+            Seamless Transitions. <br class="hidden sm:inline">
+            <span class="text-primary-blue dark:text-accent-gold">Exceptional Service.</span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-black-700 dark:text-gray-300 mb-10 max-w-3xl mx-auto transition-colors duration-500">
+            WELLDAY transforms a stressful day into a perfectly orchestrated transition, nationally or internationally. Experience the pinnacle of moving service.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a href="pricing.html" class="px-8 py-4 text-lg font-semibold text-white bg-primary-blue hover:bg-opacity-90 rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
+                Get a Custom Quote
+            </a>
+            <a href="services.html" class="px-8 py-4 text-lg font-semibold text-primary-blue dark:text-white border-2 border-primary-blue dark:border-white rounded-full hover:bg-primary-blue hover:text-white dark:hover:bg-white dark:hover:text-primary-blue transform hover:scale-105 transition-all duration-300">
+                Explore Our Services
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 sm:py-32 bg-gray-100 dark:bg-gray-800 transition-colors duration-500 overflow-hidden fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-base font-semibold tracking-wide text-accent-gold uppercase">Proof of Excellence</h2>
+            <p class="mt-2 text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white">What Our Clients Say</p>
+            <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">Unfiltered experiences from those who trust WELLDAY with their most valuable assets.</p>
+        </div>
+
+        <div class="relative">
+            <div id="testimonial-slider" class="flex transition-transform duration-700 ease-in-out">
+                
+                <div class="w-full flex-shrink-0 p-4">
+                    <div class="bg-white dark:bg-gray-900 shadow-xl rounded-xl p-10 flex flex-col items-center text-center h-full">
+                        <blockquote class="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                            "The WELLDAY team redefined professional moving. Their precision, speed, and immaculate care for sensitive items exceeded every expectation. A truly seamless corporate relocation."
+                        </blockquote>
+                        <div class="flex flex-col items-center mt-auto">
+                            <img src="https://media.istockphoto.com/id/1135381173/photo/portrait-of-a-young-man-outdoors-smiling.jpg?s=612x612&w=0&k=20&c=J8DKGHI8o-oj8cY1CCNpFY2V9OmVVbJuKSO2DdbMvRg=" alt="Client Photo" class="w-16 h-16 rounded-full object-cover mb-3 border-4 border-accent-gold">
+                            <p class="text-xl font-bold text-gray-900 dark:text-white">Ethan Vane</p>
+                            <p class="text-md text-primary-blue dark:text-accent-gold">CEO, Horizon Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex-shrink-0 p-4">
+                    <div class="bg-white dark:bg-gray-900 shadow-xl rounded-xl p-10 flex flex-col items-center text-center h-full">
+                        <blockquote class="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                            "From initial quote to final placement, the service was unparalleled. The packing service was meticulous; we didn't lift a finger. Highly recommend WELLDAY for luxury residential moves."
+                        </blockquote>
+                        <div class="flex flex-col items-center mt-auto">
+                            <img src="https://images.prismic.io/tm-global/50173d79-a2da-4b53-aabb-6d42d82f32d4_0540-Image-Website-MFI-People-Testimonial-Isabella+%2B+Paula-Free-4x5-1.jpg?auto=compress,format" alt="Client Photo" class="w-16 h-16 rounded-full object-cover mb-3 border-4 border-accent-gold">
+                            <p class="text-xl font-bold text-gray-900 dark:text-white">Dr. Sarah Linton</p>
+                            <p class="text-md text-primary-blue dark:text-accent-gold">Chief Physician</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex-shrink-0 p-4">
+                    <div class="bg-white dark:bg-gray-900 shadow-xl rounded-xl p-10 flex flex-col items-center text-center h-full">
+                        <blockquote class="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                            "The international move was handled with absolute professionalism. Every regulatory hurdle was managed flawlessly. WELLDAY is the only choice for complex, high-value relocations."
+                        </blockquote>
+                        <div class="flex flex-col items-center mt-auto">
+                            <img src="https://media.istockphoto.com/id/1406447835/photo/portrait-on-a-man-in-his-40s.webp?b=1&s=170667a&w=0&k=20&c=QH848C0aNTVI3UnsCWXCNsfsqCH_QypQUYX-oatnUdg=" alt="Client Photo" class="w-16 h-16 rounded-full object-cover mb-3 border-4 border-accent-gold">
+                            <p class="text-xl font-bold text-gray-900 dark:text-white">Javier Mendez</p>
+                            <p class="text-md text-primary-blue dark:text-accent-gold">Global Finance Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex-shrink-0 p-4">
+                    <div class="bg-white dark:bg-gray-900 shadow-xl rounded-xl p-10 flex flex-col items-center text-center h-full">
+                        <blockquote class="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                            "Their specialty item transport was incredible. My entire art collection arrived in pristine condition. This is white-glove service in the truest sense of the word."
+                        </blockquote>
+                        <div class="flex flex-col items-center mt-auto">
+                            <img src="https://images.unsplash.com/photo-1609902726285-00668009f004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDQzfHxoYXBweXxlbnwwfHx8fDE2MTU4OTMxMDU&ixlib=rb-1.2.1&q=80&w=2000" alt="Client Photo" class="w-16 h-16 rounded-full object-cover mb-3 border-4 border-accent-gold">
+                            <p class="text-xl font-bold text-gray-900 dark:text-white">Mrs. Evelyn Reed</p>
+                            <p class="text-md text-primary-blue dark:text-accent-gold">Art Collector</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full flex-shrink-0 p-4">
+                    <div class="bg-white dark:bg-gray-900 shadow-xl rounded-xl p-10 flex flex-col items-center text-center h-full">
+                        <blockquote class="text-lg italic text-gray-700 dark:text-gray-300 mb-6">
+                            "The most stress-free move I've ever experienced. Professional, punctual, and highly communicative throughout the entire process. WELLDAY delivers on its promise of excellence."
+                        </blockquote>
+                        <div class="flex flex-col items-center mt-auto">
+                            <img src="https://www.northernvirginiaendo.com/wp-content/uploads/testimonials-smiling-man.jpg" alt="Client Photo" class="w-16 h-16 rounded-full object-cover mb-3 border-4 border-accent-gold">
+                            <p class="text-xl font-bold text-gray-900 dark:text-white">Robert Chen</p>
+                            <p class="text-md text-primary-blue dark:text-accent-gold">Venture Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <button id="prev-testimonial" class="absolute top-1/2 left-0 transform -translate-y-1/2 p-3 bg-white dark:bg-gray-900 rounded-full shadow-lg ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition z-20">
+                <svg class="w-6 h-6 text-primary-blue dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button id="next-testimonial" class="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 bg-white dark:bg-gray-900 rounded-full shadow-lg mr-2 hover:bg-gray-200 dark:hover:bg-gray-700 transition z-20">
+                <svg class="w-6 h-6 text-primary-blue dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </button>
+
+            <div id="testimonial-dots" class="flex justify-center space-x-2 mt-6">
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 sm:py-32 bg-white dark:bg-gray-900 transition-colors duration-500 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-base font-semibold tracking-wide text-primary-blue dark:text-accent-gold uppercase">Operational Excellence</h2>
+            <p class="mt-2 text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white">Our Work in Focus</p>
+            <p class="mt-4 text-xl text-gray-600 dark:text-gray-300">A glimpse into the precision, care, and advanced logistics that define every WELLDAY move.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="group relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                <img src="assets/images/gallery 1.jpg" alt="White-glove packing of fragile items" class="w-full h-72 object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                
+                <div class="absolute inset-0 bg-primary-blue bg-opacity-70 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-2">White-Glove Packing</h3>
+                    <p class="text-gray-200">Meticulous and secure handling of fragile and high-value possessions.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                <img src="https://uploads-ssl.webflow.com/638c8ae10787c72c1ae1b9a0/63f78fc18b16522971800dc7_inspection%20for%20truck.jpg" alt="Climate-controlled storage facility" class="w-full h-72 object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                <div class="absolute inset-0 bg-primary-blue bg-opacity-70 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-2">Climate-Controlled Storage</h3>
+                    <p class="text-gray-200">State-of-the-art security and environmental protection for long or short term needs.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                <img src="https://media.angi.com/s3fs-public/moving-ml.png" alt="Specialized equipment transporting large items" class="w-full h-72 object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                <div class="absolute inset-0 bg-primary-blue bg-opacity-70 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-2">Advanced Logistics</h3>
+                    <p class="text-gray-200">Utilizing specialized equipment for flawless handling of heavy or unique items.</p>
+                </div> 
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/pbxY0s7Egi9wZ7xENBp3GA/o.jpg" alt="WELLDAY team members carefully loading a truck" class="w-full h-72 object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                <div class="absolute inset-0 bg-primary-blue bg-opacity-70 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-2">The WELLDAY Team</h3>
+                    <p class="text-gray-200">Trained, professional staff committed to a swift and courteous service.</p>
+                </div>
+            </div>
+            
+            <div class="group relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                <img src="https://www.thepinnaclelist.com/wp-content/uploads/2025/11/Moving-Company-Servicemen.jpg" alt="Corporate office being moved" class="w-full h-72 object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                <div class="absolute inset-0 bg-primary-blue bg-opacity-70 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-2">Corporate Relocation</h3>
+                    <p class="text-gray-200">Minimizing downtime with expert planning for business transitions.</p>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 cursor-pointer">
+                <img src="https://media.consumeraffairs.com/files/caimages/best-interstate-moving-companies-med.jpg" alt="WELLDAY dedicated moving truck fleet" class="w-full h-72 object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-105">
+                <div class="absolute inset-0 bg-primary-blue bg-opacity-70 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <h3 class="text-2xl font-bold text-white mb-2">Dedicated Fleet</h3>
+                    <p class="text-gray-200">Modern, well-maintained vehicles ensuring safe and timely delivery.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="services.html" class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-accent-gold hover:bg-opacity-90 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                View All Our Services
+                <svg class="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="bg-gray-800 dark:bg-gray-950 transition-colors duration-500 pt-16 pb-8 border-t border-gray-700 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <div>
+                <a href="index.html" class="text-3xl font-extrabold text-white tracking-wider">
+                    WELLDAY<span class="text-accent-gold">.</span>
+                </a>
+                <p class="mt-4 text-gray-400 text-sm">Seamless Transitions. Exceptional Service.</p>
+                <div class="mt-6 space-y-2 text-sm text-gray-400">
+                    <p>Email: <a href="mailto:info@welldaymovers.com" class="hover:text-accent-gold transition">info@welldaymovers.com</a></p>
+                    <p>Phone: <a href="tel:+18005550199" class="hover:text-accent-gold transition">1-800-555-0199</a></p>
+                    <p>Address: 123 Professional Blvd, Suite 400, Moving City, 90210</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Company</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="about.html" class="hover:text-accent-gold transition">About WELLDAY</a></li>
+                    <li><a href="blog.html" class="hover:text-accent-gold transition">Our Blog</a></li>
+                    <li><a href="contact.html" class="hover:text-accent-gold transition">Careers</a></li>
+                    <li><a href="sitemap.xml" class="hover:text-accent-gold transition" target="_blank">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Services</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="services.html#residential" class="hover:text-accent-gold transition">Residential Luxury</a></li>
+                    <li><a href="services.html#corporate" class="hover:text-accent-gold transition">Corporate Relocation</a></li>
+                    <li><a href="services.html#storage" class="hover:text-accent-gold transition">Secure Storage</a></li>
+                    <li><a href="pricing.html" class="hover:text-accent-gold transition">Transparent Pricing</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4 border-b border-accent-gold/50 pb-1 inline-block">Stay Informed</h3>
+                <p class="text-gray-400 text-sm mb-4">Subscribe for exclusive moving tips and updates.</p>
+                <form action="#" method="POST" name="subscription" data-netlify="true" class="flex flex-col space-y-3">
+    
+    <input type="hidden" name="form-name" value="subscription" /> 
+    
+    <input 
+        type="email" 
+        name="email" placeholder="Your professional email" 
+        class="p-3 rounded-lg border border-gray-600 bg-gray-700 text-white focus:ring-accent-gold focus:border-accent-gold"
+        required 
+    >
+    <button type="submit" class="p-3 bg-accent-gold text-white font-semibold rounded-lg hover:bg-opacity-90 transition">
+        Subscribe
+    </button>
+</form>
+            </div>
+        </div>
+
+        <div class="mt-16 border-t border-gray-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-gray-400 order-2 md:order-1">
+                &copy; 2025 WELLDAY Moving Co. All rights reserved. | <a href="#" class="hover:text-accent-gold transition">Privacy Policy</a>
+            </p>
+            <div class="flex space-x-4 mb-4 md:mb-0 order-1 md:order-2 text-gray-400">
+                <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+                <svg class="w-6 h-6 hover:text-accent-gold transition" fill="currentColor" viewBox="0 0 24 24"></svg>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="assets/scripts.js" defer></script>
+</body>
+</html>
