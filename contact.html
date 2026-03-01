@@ -96,74 +96,75 @@
                 <div class="p-8 sm:p-10 lg:p-12 rounded-3xl shadow-2xl 
             bg-white dark:bg-gray-800 border border-accent-gold/30 dark:border-accent-gold/20 
             hover:shadow-3xl transition-all duration-500">
-                <form id="quote-form" class="space-y-6" name="quote" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="quote">
+                <form id="quote-form" class="space-y-6" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="quote">
+    
+    <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
 
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="full-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Full Name *</label>
-                            <input type="text" id="full-name" name="full-name" required
-                                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
-                            <p id="full-name-error" class="text-sm text-red-500 mt-1 hidden"></p>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email Address *</label>
-                            <input type="email" id="email" name="email" required
-                                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
-                            <p id="email-error" class="text-sm text-red-500 mt-1 hidden"></p>
-                        </div>
-                    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <label for="full-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Full Name *</label>
+            <input type="text" id="full-name" name="full-name" required
+                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
+            <p id="full-name-error" class="text-sm text-red-500 mt-1 hidden"></p>
+        </div>
+        <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email Address *</label>
+            <input type="email" id="email" name="email" required
+                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
+            <p id="email-error" class="text-sm text-red-500 mt-1 hidden"></p>
+        </div>
+    </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="service-type" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Type of Service *</label>
-                            <select id="service-type" name="service-type" required
-                                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
-                                
-                                <option value="">Please Select Service Type</option> 
-                                
-                                <option value="residential">Residential Luxury Move</option>
-                                <option value="corporate">Corporate Relocation</option>
-                                <option value="specialty">Specialty / Fine Art Transport</option>
-                            </select>
-                            <p id="service-type-error" class="text-sm text-red-500 mt-1 hidden"></p>
-                        </div>
-                        <div>
-                            <label for="move-date" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Preferred Move Date *</label>
-                            <input type="date" id="move-date" name="move-date" required
-                                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
-                            <p id="move-date-error" class="text-sm text-red-500 mt-1 hidden">Please select a valid future move date.</p>
-                        </div>
-                    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <label for="service-type" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Type of Service *</label>
+            <select id="service-type" name="service-type" required
+                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
+                <option value="">Please Select Service Type</option> 
+                <option value="residential">Residential Luxury Move</option>
+                <option value="corporate">Corporate Relocation</option>
+                <option value="specialty">Specialty / Fine Art Transport</option>
+            </select>
+            <p id="service-type-error" class="text-sm text-red-500 mt-1 hidden"></p>
+        </div>
+        <div>
+            <label for="move-date" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Preferred Move Date *</label>
+            <input type="date" id="move-date" name="move-date" required
+                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
+            <p id="move-date-error" class="text-sm text-red-500 mt-1 hidden">Please select a valid future move date.</p>
+        </div>
+    </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="origin" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Origin Location (City, State/Country) *</label>
-                            <input type="text" id="origin" name="origin" required
-                                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
-                            <p id="origin-error" class="text-sm text-red-500 mt-1 hidden"></p>
-                        </div>
-                        <div>
-                            <label for="destination" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Destination Location (City, State/Country) *</label>
-                            <input type="text" id="destination" name="destination" required
-                                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
-                            <p id="destination-error" class="text-sm text-red-500 mt-1 hidden"></p>
-                        </div>
-                    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <label for="origin" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Origin Location (City, State/Country) *</label>
+            <input type="text" id="origin" name="origin" required
+                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
+            <p id="origin-error" class="text-sm text-red-500 mt-1 hidden"></p>
+        </div>
+        <div>
+            <label for="destination" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Destination Location (City, State/Country) *</label>
+            <input type="text" id="destination" name="destination" required
+                class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue">
+            <p id="destination-error" class="text-sm text-red-500 mt-1 hidden"></p>
+        </div>
+    </div>
 
-                    <div>
-                        <label for="details" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Move Details (Approx. size, special items)</label>
-                        <textarea id="details" name="details" rows="4"  placeholder="Provide any additional details about your move (optional)..."
-                            class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue"></textarea>
-                    </div>
+    <div>
+        <label for="details" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Move Details (Approx. size, special items)</label>
+        <textarea id="details" name="details" rows="4"  placeholder="Provide any additional details about your move (optional)..."
+            class="mt-1 block w-full border rounded-md shadow-sm p-3 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-primary-blue focus:border-primary-blue"></textarea>
+    </div>
 
-                    <div>
-                        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-bold text-white bg-accent-gold hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-gold transition duration-300">
-                            Request Your Personalized Quote
-                        </button>
-                    </div>
-                </form>
+    <div>
+        <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-bold text-white bg-accent-gold hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-gold transition duration-300">
+            Request Your Personalized Quote
+        </button>
+    </div>
+</form>
                 </div>
             </div>
         </div>
