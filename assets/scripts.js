@@ -289,15 +289,33 @@ else {
         }
       });
 
-      if (isValid) {
-        console.log('Form data valid. Submitting...');
-        formMessage.textContent = 'Thank you! Your quote request has been sent successfully. A specialist will contact you shortly.';
-        formMessage.classList.remove('hidden','text-red-600','dark:text-red-400','bg-red-200','dark:bg-red-800');
-        formMessage.classList.add('text-green-800','dark:text-green-300','bg-green-100','dark:bg-green-900');
-        quoteForm.reset();
+     if (isValid) {
+        console.log('Form data valid. Submitting to Netlify...');
+        
+        // Prepare the data for Netlify
+        const formData = new FormData(quoteForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => {
+            // Show success message
+            formMessage.textContent = 'Thank you! Your quote request has been sent successfully. A specialist will contact you shortly.';
+            formMessage.classList.remove('hidden','text-red-600','dark:text-red-400','bg-red-200','dark:bg-red-800');
+            formMessage.classList.add('text-green-800','dark:text-green-300','bg-green-100','dark:bg-green-900');
+            
+            // Reset the form after successful submission
+            quoteForm.reset();
+          })
+          .catch((error) => {
+            formMessage.textContent = 'Oops! There was an issue sending your request. Please try again.';
+            formMessage.classList.remove('hidden', 'bg-green-100');
+            formMessage.classList.add('bg-red-200', 'text-red-600');
+            console.error('Form submission error:', error);
+          });
 
-        // OPTIONAL: here you can integrate fetch() to send to an API endpoint
-        // fetch('/api/quote', { method: 'POST', body: new FormData(quoteForm) }) ...
       } else {
         formMessage.textContent = 'Please correct the highlighted errors above to submit your quote request.';
         formMessage.classList.remove('hidden','text-green-800','dark:text-green-300','bg-green-100','dark:bg-green-900');
